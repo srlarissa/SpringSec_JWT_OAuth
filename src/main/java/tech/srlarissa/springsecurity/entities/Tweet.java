@@ -10,7 +10,9 @@ public class Tweet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "tweet_id")
     private Long tweetId;
+
     private User user;
     private String content;
     private Instant createdAt;

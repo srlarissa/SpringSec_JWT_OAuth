@@ -11,9 +11,14 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(name = "user_id")
     private UUID userId;
 
+    @Column(unique = true)
     private String username;
+
     private String password;
+
+    @Column(name = "role_id")
     private Set<Role> roles;
 }
