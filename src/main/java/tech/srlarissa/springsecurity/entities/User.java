@@ -2,6 +2,7 @@ package tech.srlarissa.springsecurity.entities;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
