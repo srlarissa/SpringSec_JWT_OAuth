@@ -26,4 +26,19 @@ public class Role {
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
+
+    public enum Values {
+        ROLE_USER(1L),
+        ROLE_ADMIN(2L);
+
+        long roleId;
+
+        Values(long roleId){
+            this.roleId = roleId;
+        }
+
+        public long getRoleId() {
+            return roleId;
+        }
+    }
 }
